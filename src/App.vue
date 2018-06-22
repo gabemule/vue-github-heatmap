@@ -1,24 +1,27 @@
 <template>
     <div id="app">
+
+        <!-- MINIMAL USAGE -->
         <GitHubHeatMap
             :days="days"
         ></GitHubHeatMap>
 
-        <br>
+        <br> <br> <br> <br>
 
-        <!--<GitHubHeatMap-->
-            <!--:days="days"-->
-            <!--:colors="['#eee', '#c6e48b', '#7bc96f', '#239a3b', '#196127']"-->
-            <!--:styling="{ width: '20', height: '20', margin: '1' }"-->
-        <!--&gt;</GitHubHeatMap>-->
-
-        <!--
+        <!-- USAGE W/ CONFIGURATIONS -->
         <GitHubHeatMap
             :days="days"
-            :colors="['#eee', '#c6e48b', '#7bc96f', '#239a3b', '#196127']"
-            :styling="{ width: '20px', height: '20px', margin: '2.5' }"
+            :colors="['#EEFF07', '#FFC706', '#FF8F05', '#FF4F04', '#FF0004']"
+            :styling="{ width: 15, height: 15, margin: 1 }"
+            :locale="{
+                months: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+                days: ['Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado'],
+                no: 'Não há',
+                commit: 'contribuições',
+                on: 'em',
+            }"
         ></GitHubHeatMap>
-        -->
+
     </div>
 </template>
 
@@ -55,12 +58,13 @@
 </script>
 
 <style lang="scss">
+    @import './assets/tooltip';
+
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
+        margin: 50px 0;
     }
 </style>
