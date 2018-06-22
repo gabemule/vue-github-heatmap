@@ -2,6 +2,10 @@
 
 Vue-github-heatmap is a Vue.js component, inspired in github's heatmap for commits as showed in profile.
 
+<p align="center">
+    <img src="public/example.png" alt="vue-github-heatmap">
+</p>
+
 ## Installation
 
 ### Dependencies (First-run )
