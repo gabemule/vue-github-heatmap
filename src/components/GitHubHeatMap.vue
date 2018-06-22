@@ -45,7 +45,7 @@
             return {
                 maxCount: 0,
                 monthCount: [],
-                style: { width: 10, height: 10, margin: 2.5 },
+                style: { width: 14, height: 14, margin: 1 },
                 localization: {
                     months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                     days: ['', 'Mon', '', 'Wed', '', 'Fri', ''],
