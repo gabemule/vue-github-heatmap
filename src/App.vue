@@ -12,7 +12,7 @@
         <GitHubHeatMap
             :days="days"
             :colors="['#EEFF07', '#FFC706', '#FF8F05', '#FF4F04', '#FF0004']"
-            :styling="{ width: 15, height: 15, margin: 1 }"
+            :styling="{ width: 20, height: 20, margin: 2 }"
             :locale="{
                 months: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
                 days: ['Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado'],
